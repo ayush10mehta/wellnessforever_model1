@@ -31,12 +31,13 @@ def score():
     Monthly_Sale = 45
     Rent = 34
     Sq_Ft = 67
-    print(Rent_per_Sq_Ft)
+    
     print(Rent)
     print(Sq_Ft)
     ####
    
     Rent_per_Sq_Ft	= Rent / Sq_Ft
+    print(Rent_per_Sq_Ft)
     print("calculated")
     bins= pd.cut(Rent_per_Sq_Ft, bins=[0,100,150,200,300,400,10000],labels=['0-99','100-149','150-199','200-299','300-399','above'],right=True)
     print("success2")
