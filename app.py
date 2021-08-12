@@ -16,27 +16,28 @@ def main():
 def score():
     #extract the data from post request
     print("success")
-    HIG_Household_Count = float(form['HIG_Household_Count'])
-    HIG_People_Count = float(form['HIG_People_Count'])
-    LIG_Household_Count = float(form['LIG_Household_Count'])	
-    LIG_People_Count = float(form['LIG_People_Count'])
-    MIG_Household_Count = float(form['MIG_Household_Count'])
-    MIG_People_Count = float(form['MIG_People_Count'])
-    Clinic = float(form['Clinic'])
-    Hospital = float(form['Hospital'])
-    A = float(form['A'])
-    B = float(form['B'])
-    C = float(form['C'])
-    Chemist_Stores = float(form['Chemist_Stores'])
-    Monthly_Sale = float(form['Monthly_Sale'])
-    Rent = float(form['Rent'])
-    Sq_Ft = float(form['Sq_Ft'])
-    
-    ####
-    Rent_per_Sq_Ft	= Rent / Sq_Ft
+    HIG_Household_Count = 30
+    HIG_People_Count = 34
+    LIG_Household_Count = 55	
+    LIG_People_Count = 57
+    MIG_Household_Count = 34
+    MIG_People_Count = 55
+    Clinic = 67
+    Hospital = 45
+    A = 34
+    B = 45
+    C = 56
+    Chemist_Stores = 45
+    Monthly_Sale = 45
+    Rent = 34
+    Sq_Ft = 67
     print(Rent_per_Sq_Ft)
     print(Rent)
     print(Sq_Ft)
+    ####
+   
+    Rent_per_Sq_Ft	= Rent / Sq_Ft
+    print("calculated")
     bins= pd.cut(Rent_per_Sq_Ft, bins=[0,100,150,200,300,400,10000],labels=['0-99','100-149','150-199','200-299','300-399','above'],right=True)
     print("success2")
     print(bins)
