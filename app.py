@@ -16,21 +16,21 @@ def main():
 def score():
     #extract the data from post request
     print("success")
-    HIG_Household_Count = 30
-    HIG_People_Count = 34
-    LIG_Household_Count = 55	
-    LIG_People_Count = 57
-    MIG_Household_Count = 34
-    MIG_People_Count = 55
-    Clinic = 67
-    Hospital = 45
-    A = 34
-    B = 45
-    C = 56
-    Chemist_Stores = 45
-    Monthly_Sale = 45
-    Rent = 34
-    Sq_Ft = 67
+    HIG_Household_Count = float(request.form['HIG_Household_Count'])
+    HIG_People_Count = float(request.form['HIG_People_Count'])
+    LIG_Household_Count = float(request.form['LIG_Household_Count'])	
+    LIG_People_Count = float(request.form['LIG_People_Count'])
+    MIG_Household_Count = float(request.form['MIG_Household_Count'])
+    MIG_People_Count = float(request.form['MIG_People_Count'])
+    Clinic = float(request.form['Clinic'])
+    Hospital = float(request.form['Hospital'])
+    A = float(request.form['A'])
+    B = float(request.form['B'])
+    C = float(request.form['C'])
+    Chemist_Stores = float(request.form['Chemist_Stores'])
+    Monthly_Sale = float(request.form['Monthly_Sale'])
+    Rent = float(request.form['Rent'])
+    Sq_Ft = float(request.form['Sq_Ft'])
     
     print(Rent)
     print(Sq_Ft)
@@ -43,9 +43,9 @@ def score():
 
     
     print("success2")
-    if Rent_per_Sq_Ft >= 0 and Rent_per_Sq_Ft <=100:
+    if Rent_per_Sq_Ft >= 0 and Rent_per_Sq_Ft <=99:
         #bins= "a"
-    #if bins == "a":
+        #if bins == "a":
         target_HIG_Household_Count= 3297
         target_HIG_People_Count= 13199
         target_LIG_Household_Count=446
@@ -61,7 +61,7 @@ def score():
         target_Monthly_Sale=6
         target_Rent=87884
     
-    elif bins == 100-149:
+    elif Rent_per_Sq_Ft >= 100 and Rent_per_Sq_Ft <=149:
         target_HIG_Household_Count= 4405
         target_HIG_People_Count= 17626	
         target_LIG_Household_Count=616
@@ -77,7 +77,7 @@ def score():
         target_Monthly_Sale=7
         target_Rent=107305
     
-    elif bins == 150-199:
+    elif Rent_per_Sq_Ft >= 150 and Rent_per_Sq_Ft <=199:
         target_HIG_Household_Count= 6840
         target_HIG_People_Count= 27362
         target_LIG_Household_Count=403
@@ -93,7 +93,7 @@ def score():
         target_Monthly_Sale=8
         target_Rent=162503
     
-    elif bins == 200-299:
+    elif Rent_per_Sq_Ft >= 200 and Rent_per_Sq_Ft <=249:
         target_HIG_Household_Count= 64983
         target_HIG_People_Count= 31044
         target_LIG_Household_Count=826
@@ -109,7 +109,7 @@ def score():
         target_Monthly_Sale=8
         target_Rent=159079
 
-    elif bins == 300-399:
+    elif Rent_per_Sq_Ft >= 250 and Rent_per_Sq_Ft <= 399:
         target_HIG_Household_Count= 6736
         target_HIG_People_Count= 26941
         target_LIG_Household_Count=50
