@@ -16,21 +16,22 @@ def main():
 def score():
     #extract the data from post request
     print("success")
-    HIG_Household_Count = float(request.form['HIG_Household_Count'])
-    HIG_People_Count = float(request.form['HIG_People_Count'])
-    LIG_Household_Count = float(request.form['LIG_Household_Count'])	
-    LIG_People_Count = float(request.form['LIG_People_Count'])
-    MIG_Household_Count = float(request.form['MIG_Household_Count'])
-    MIG_People_Count = float(request.form['MIG_People_Count'])
-    Clinic = float(request.form['Clinic'])
-    Hospital = float(request.form['Hospital'])
-    A = float(request.form['A'])
-    B = float(request.form['B'])
-    C = float(request.form['C'])
-    Chemist_Stores = float(request.form['Chemist_Stores'])
-    Monthly_Sale = float(request.form['Monthly_Sale'])
-    Rent = float(request.form['Rent'])
-    Sq_Ft = float(request.form['Sq_Ft'])
+   
+    HIG_Household_Count = 23
+    HIG_People_Count = 34
+    LIG_Household_Count = 45	
+    LIG_People_Count = 67
+    MIG_Household_Count = 54
+    MIG_People_Count = 34
+    Clinic = 44
+    Hospital = 456
+    A = 11
+    B = 55
+    C = 567
+    Chemist_Stores = 456
+    Monthly_Sale = 345
+    Rent = 345
+    Sq_Ft = 678
     
     ####
     Rent_per_Sq_Ft	= Rent / Sq_Ft
@@ -197,3 +198,5 @@ def score():
 
 if __name__ == "__main__":
     app.run(debug=True)
+    
+
