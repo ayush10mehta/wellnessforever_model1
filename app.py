@@ -40,12 +40,12 @@ def score():
     print(Rent_per_Sq_Ft)
     print("calculated")
     
-    if Rent_per_Sq_Ft >= 0 and Rent_per_Sq_Ft <=100:
-        bins= "a"
+
     
     print("success2")
-    print(bins)
-    if bins == "a":
+    if Rent_per_Sq_Ft >= 0 and Rent_per_Sq_Ft <=100:
+        #bins= "a"
+    #if bins == "a":
         target_HIG_Household_Count= 3297
         target_HIG_People_Count= 13199
         target_LIG_Household_Count=446
