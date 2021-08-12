@@ -39,10 +39,11 @@ def score():
     Rent_per_Sq_Ft	= Rent / Sq_Ft
     print(Rent_per_Sq_Ft)
     print("calculated")
-    bins= pd.cut(Rent_per_Sq_Ft, bins=[0,100,150,200,300,400,10000],labels=['0-99','100-149','150-199','200-299','300-399','above'],right=True)
+    bins=pd.IntervalIndex.from_tuples([0,100,150,200,300,400,10000])
+    pd.cut(np.array(Rent_per_Sq_Ft),bins=bins,labels=['0-99','100-149','150-199','200-299','300-399','above'])
     print("success2")
     print(bins)
-    if bins == 0-99:
+    if bins == '0-99':
         target_HIG_Household_Count= 3297
         target_HIG_People_Count= 13199
         target_LIG_Household_Count=446
@@ -58,7 +59,7 @@ def score():
         target_Monthly_Sale=6
         target_Rent=87884
     
-    elif bins == 100-149:
+    elif bins == '100-149':
         target_HIG_Household_Count= 4405
         target_HIG_People_Count= 17626	
         target_LIG_Household_Count=616
@@ -74,7 +75,7 @@ def score():
         target_Monthly_Sale=7
         target_Rent=107305
     
-    elif bins == 150-199:
+    elif bins == '150-199':
         target_HIG_Household_Count= 6840
         target_HIG_People_Count= 27362
         target_LIG_Household_Count=403
@@ -90,7 +91,7 @@ def score():
         target_Monthly_Sale=8
         target_Rent=162503
     
-    elif bins == 200-299:
+    elif bins == '200-299':
         target_HIG_Household_Count= 64983
         target_HIG_People_Count= 31044
         target_LIG_Household_Count=826
@@ -106,7 +107,7 @@ def score():
         target_Monthly_Sale=8
         target_Rent=159079
 
-    elif bins == 300-399:
+    elif bins == '300-399':
         target_HIG_Household_Count= 6736
         target_HIG_People_Count= 26941
         target_LIG_Household_Count=50
