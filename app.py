@@ -36,14 +36,16 @@ def score():
     print(Sq_Ft)
     ####
    
-    Rent_per_Sq_Ft	= Rent / Sq_Ft
+    Rent_per_Sq_Ft	= 56 #Rent / Sq_Ft
     print(Rent_per_Sq_Ft)
     print("calculated")
-    bins=pd.IntervalIndex.from_tuples([0,100,150,200,300,400,10000])
-    pd.cut(np.array(Rent_per_Sq_Ft),bins=bins,labels=['0-99','100-149','150-199','200-299','300-399','above'])
+    
+    if Rent_per_Sq_Ft >= 0 and Rent_per_Sq_Ft <=100:
+        bins= "a"
+    
     print("success2")
     print(bins)
-    if bins == 0-99:
+    if bins == "a":
         target_HIG_Household_Count= 3297
         target_HIG_People_Count= 13199
         target_LIG_Household_Count=446
