@@ -36,7 +36,7 @@ def score():
     print(Sq_Ft)
     ####
    
-    Rent_per_Sq_Ft = 56 #Rent / Sq_Ft
+    Rent_per_Sq_Ft = Rent / Sq_Ft
     print(Rent_per_Sq_Ft)
     print("calculated")
     print("success2")
