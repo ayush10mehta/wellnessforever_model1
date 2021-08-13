@@ -154,7 +154,7 @@ def score():
     else:
         score3=0.2*25
     if LIG_People_Count <= target_LIG_People_Count:
-        score4=LIG_People_Count/LIG_People_Count*0.2*10
+        score4=LIG_People_Count/target_LIG_People_Count*0.2*10
     else:
         score4=0.2*10
     if MIG_Household_Count <= target_MIG_Household_Count:
