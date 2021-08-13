@@ -79,7 +79,7 @@ def score():
         target_HIG_Household_Count= 6840
         target_HIG_People_Count= 27362
         target_LIG_Household_Count=403
-        LIG_People_Count=1613
+        target_LIG_People_Count=1613
         target_MIG_Household_Count= 4071
         target_MIG_People_Count= 16287
         target_Clinic= 53
@@ -95,7 +95,7 @@ def score():
         target_HIG_Household_Count= 64983
         target_HIG_People_Count= 31044
         target_LIG_Household_Count=826
-        LIG_People_Count=3304
+        target_LIG_People_Count=3304
         target_MIG_Household_Count= 4564
         target_MIG_People_Count= 18252
         target_Clinic= 55
@@ -111,7 +111,7 @@ def score():
         target_HIG_Household_Count= 6736
         target_HIG_People_Count= 26941
         target_LIG_Household_Count=50
-        LIG_People_Count=202
+        target_LIG_People_Count=202
         target_MIG_Household_Count= 4990
         target_MIG_People_Count= 19165
         target_Clinic= 44
@@ -127,7 +127,7 @@ def score():
         target_HIG_Household_Count= 10741
         target_HIG_People_Count= 42949
         target_LIG_Household_Count=931
-        LIG_People_Count=3725
+        target_LIG_People_Count=3725
         target_MIG_Household_Count= 3225
         target_MIG_People_Count= 12880
         target_Clinic= 88
