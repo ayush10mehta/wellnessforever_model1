@@ -158,7 +158,7 @@ def score():
     else:
         score4=0.2*10
     if MIG_Household_Count <= target_MIG_Household_Count:
-        score5=MIG_Household_Count/target_MIG_Household_Count.item()*0.3*25
+        score5=MIG_Household_Count/target_MIG_Household_Count*0.3*25
     else:
         score5=0.3*25
     if MIG_People_Count <= target_MIG_People_Count:
