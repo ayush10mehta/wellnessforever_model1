@@ -16,21 +16,21 @@ def main():
 def score():
     #extract the data from post request
     print("success")
-    HIG_Household_Count = request.form['HIG_Household_Count']
-    HIG_People_Count = request.form['HIG_People_Count']
-    LIG_Household_Count = request.form['LIG_Household_Count']	
-    LIG_People_Count = request.form['LIG_People_Count']
-    MIG_Household_Count =request.form['MIG_Household_Count']
-    MIG_People_Count = request.form['MIG_People_Count']
-    Clinic = request.form['Clinic']
-    Hospital = request.form['Hospital']
-    A = request.form['A']
-    B = request.form['B']
-    C = request.form['C']
-    Chemist_Stores = request.form['Chemist_Stores']
-    Monthly_Sale = request.form['Monthly_Sale']
-    Rent = request.form['Rent']
-    Sq_Ft = request.form['Sq_Ft']
+    HIG_Household_Count = float(request.form['HIG_Household_Count'])
+    HIG_People_Count = float(request.form['HIG_People_Count'])
+    LIG_Household_Count = float(request.form['LIG_Household_Count'])	
+    LIG_People_Count = float(request.form['LIG_People_Count'])
+    MIG_Household_Count = float(request.form['MIG_Household_Count'])
+    MIG_People_Count = float(request.form['MIG_People_Count'])
+    Clinic = float(request.form['Clinic'])
+    Hospital = float(request.form['Hospital'])
+    A = float(request.form['A'])
+    B = float(request.form['B'])
+    C = float(request.form['C'])
+    Chemist_Stores = float(request.form['Chemist_Stores'])
+    Monthly_Sale = float(request.form['Monthly_Sale'])
+    Rent = float(request.form['Rent'])
+    Sq_Ft = float(request.form['Sq_Ft'])
     
     print(Rent)
     print(Sq_Ft)
